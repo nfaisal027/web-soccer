@@ -28,8 +28,7 @@ export class StandingsComponent implements OnInit {
     this.ComputeRangkings();
    }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   getTeams(){
     if(this.UsingAsync){
       let xx = this._soccerService.getAllTeamsAsync();

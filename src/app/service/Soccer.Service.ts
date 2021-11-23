@@ -5,18 +5,18 @@ import { SEASON_SCHEDULE, TEAMS } from "./scheduleData";
     {providedIn:'root'}
 )
 export class SoccerService {
-    
-    getAllTeamsAsync() {
-      throw Promise.resolve(SEASON_SCHEDULE)
+
+    getScheduleAsync(){
+        return Promise.resolve(SEASON_SCHEDULE)
     }
     getSchedule(){
         return SEASON_SCHEDULE;
     }
-
-    getScheduleAsync(){
+    getAllTeamsAsync() {
         return Promise.resolve(TEAMS)
-    }
+      }
     getAllTeams(){
         return TEAMS;
     }
+    private computerRangking(){}
 }
